@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein FinanzChecker</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <h1>📊 Mein FinanzChecker</h1>
+
+    <div class="gesamt" id="gesamt">💰 Gesamt: 0 €</div>
+
+    <button class="income" onclick="hinzufügen('einnahme')">➕ Einnahme</button>
+    <button class="food" onclick="hinzufügen('lebensmittel')">🛒 Lebensmittel</button>
+    <button class="clothing" onclick="hinzufügen('kleidung')">👕 Kleidung</button>
+    <button class="leisure" onclick="hinzufügen('freizeit')">🎉 Freizeit</button>
+    <button class="household" onclick="hinzufügen('haushalt')">🏠 Haushaltswaren</button>
+    <button class="transport" onclick="hinzufügen('transport')">🚗 Transport</button>
+
+    <h2>📅 Letzte Transaktionen</h2>
+    <div id="liste"></div>
+
+    <h2>📊 Budget-Übersicht</h2>
+    <div id="budgets"></div>
+
+    <script src="code.js"></script>
+</body>
+</html>
